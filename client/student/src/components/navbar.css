@@ -1,0 +1,29 @@
+.navbar{
+    height:100px;
+    width: 100%;
+    background-color: aquamarine;
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin: auto;
+
+}
+img{
+    height: 75px;
+    width: 200px;
+}
+div{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+button{
+    background-color: crimson;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight:bold;
+}

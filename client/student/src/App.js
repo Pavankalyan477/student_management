@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 import StudentDetails from './components/StudentDetails';
+import Navbar from './components/Navbar';
+import ContextDetails from './components/ContextDetails';
 
 function App() {
   return (
     <div className="App">
-    <StudentDetails/>
+   <ContextDetails/>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Button, TextField } from '@mui/material'
-import { Box } from '@mui/material'
+
 
 export default function StudentDetails() {
     return (
         <div>
-             <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} >
+      
              <TextField
             helperText="Please enter your name"
             id="demo-helper-text-aligned"
@@ -43,7 +43,7 @@ export default function StudentDetails() {
             />
             <br/>
             <Button variant="contained">Submit</Button>
-             </Box>
+          
         </div>
     )
 }
