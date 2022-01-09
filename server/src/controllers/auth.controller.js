@@ -33,6 +33,7 @@ const login = async (req, res) => {
         .status(400)
         .send({ message: "Please check your email and password" });
     const token = createtoken(user);
+    res.redirect("/adminpage")
     return res.status(200).send({ user, token });
   } catch (err) {
     return res

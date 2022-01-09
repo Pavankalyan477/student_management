@@ -2,7 +2,7 @@ const app = require("./index");
 const connect = require("./configs/db");
 
 
-app.listen(3003, async () => {
+app.listen(2233, async () => {
     await connect();
 
 

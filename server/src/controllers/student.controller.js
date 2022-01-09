@@ -23,5 +23,24 @@ router.patch("/student/:id", async (req, res) => {
     let student = await Student.findByIdAndUpdate(req.params.id, req.body, {new : true});
     return res.status(200).send({student})
 })
+router.get("/student/age", async(req, res) => {
+    const student = await Student.find().sort({age : 1}).lean().exec();
+    return res.status(200).send({student});
+})
+
+router.get("/student/name", async (req, res) => {
+    const student = await Student.find().sort({name : 1}).lean().exec();
+    return res.status(200).send({student});
+})
+
+
+
+//delete operation
+
+router.delete("/student/:id", async (req, res) => {
+    const d = await Student.findByIdAndDelete( req.params.id).lean().exec();
+    const student = await Student.find().lean().exec();
+    return res.status(204).send({student});
+})
 
 module.exports = router;
